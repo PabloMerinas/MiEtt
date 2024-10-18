@@ -4,14 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pablomerinas.miett.persistence.model.EmployeeEntity;
-import com.pablomerinas.miett.persistence.repository.EmployeeRepository;
+import com.pablomerinas.miett.persistence.repository.EmployeeDAO;
 import com.pablomerinas.miett.services.interfaces.EmployeeManagementI;
 
 @Service
 public class EmployeeManagementImpl implements EmployeeManagementI {
 
 	@Autowired
-	private EmployeeRepository employeeRepo;
+	private EmployeeDAO employeeRepo;
 
 	@Override
 	public EmployeeEntity createEmployee(EmployeeEntity employee) {

@@ -18,11 +18,6 @@ public class EmployeeRestController {
 	@Autowired
 	private EmployeeManagementImpl employeeImpl;
 
-	@PostMapping
-	public String createEmployeeBad(@RequestBody EmployeeEntity e) {
-		return employeeImpl.createEmployee(e).toString();
-	}
-
 	@PostMapping("/createEmployee")
 	public ResponseEntity<EmployeeEntity> createEmployee(@RequestBody EmployeeEntity e) {
 		if (e == null || e.getFirstName() == null || e.getFirstName().isEmpty()) {

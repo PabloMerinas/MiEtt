@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.pablomerinas.miett.persistence.model.EmployeeEntity;
 
 @Repository
-public interface EmployeeRepository extends JpaRepository<EmployeeEntity, Long>{
+public interface EmployeeDAO extends JpaRepository<EmployeeEntity, Long>{
 
 }
